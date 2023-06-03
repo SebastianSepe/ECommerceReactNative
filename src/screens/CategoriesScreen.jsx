@@ -32,7 +32,6 @@ const CategoriesScreen = ({ navigation }) => {
         data={categories}
         renderItem={renderCategoriesItem}
         keyExtractor={(item) => item.id}
-        
         // horizontal={true}
         // showsHorizontalScrollIndicator={false}
       />
