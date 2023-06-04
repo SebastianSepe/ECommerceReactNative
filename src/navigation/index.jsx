@@ -9,7 +9,7 @@ export default () => {
 
   return (
     <NavigationContainer>
-      {user ? <ShopNavigator /> : <AuthScreen />}
+      {user ? <ShopNavigator /> : <AuthNavigator />}
     </NavigationContainer>
   );
 };
