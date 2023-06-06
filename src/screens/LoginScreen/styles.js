@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container: {
+    justifyContent: 'center',
     padding: 16,
     opacity: 0.9,
   },
@@ -26,3 +27,5 @@ const styles = StyleSheet.create({
 });
 
 export default styles;
+
+

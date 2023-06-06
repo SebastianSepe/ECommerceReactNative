@@ -8,6 +8,7 @@ import MainNavigator from './src/navigation'
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar  style="auto"/>
       <Provider store={store}>
           <MainNavigator />
       </Provider>
