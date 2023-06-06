@@ -29,11 +29,14 @@ const RegisterScreen = () => {
   };
 
   const dispatch = useDispatch();
+  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [country, setCountry] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSignUp = () => {
-    dispatch(signUp(email, password));
+    dispatch(signUp(name, firstName, country, email, password));
   };
 
   return (
@@ -45,15 +48,33 @@ const RegisterScreen = () => {
         <Card style={styles.card}>
           <Card.Title title="Registro" titleStyle={styles.title} />
           <Card.Content>
-            {/* <TextInput label="Nombre" style={styles.input} /> */}
             <TextInput
-              label="Correo electrónico"
+              label="Name"
+              style={styles.input}
+              value={name}
+              onChangeText={(text) => setName(text)}
+            />
+            <TextInput
+              label="First Name"
+              style={styles.input}
+              value={firstName}
+              onChangeText={(text) => setFirstName(text)}
+            />
+
+            <TextInput
+              label="Country"
+              style={styles.input}
+              value={country}
+              onChangeText={(text) => setCountry(text)}
+            />
+            <TextInput
+              label="Email"
               style={styles.input}
               value={email}
               onChangeText={(text) => setEmail(text)}
             />
             <TextInput
-              label="Contraseña"
+              label="Password"
               secureTextEntry
               style={styles.input}
               value={password}

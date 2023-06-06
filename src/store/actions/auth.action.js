@@ -2,9 +2,9 @@ import { URL_AUTH_SIGNUP } from "../../constants/database";
 
 export const SIGNUP = "SIGNUP";
 
-export const signUp = (email, password) => {
-  console.log(email, password);
-  return async dispatch => {
+export const signUp = (name, firstName, country, email, password) => {
+  console.log(name, firstName, country, email, password);
+  return async (dispatch) => {
     try {
       const response = await fetch(URL_AUTH_SIGNUP, {
         method: "POST",
@@ -12,6 +12,9 @@ export const signUp = (email, password) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          name,
+          firstName,
+          country,
           email,
           password,
           returnSecureToken: true,
@@ -29,5 +32,3 @@ export const signUp = (email, password) => {
     }
   };
 };
-
-
