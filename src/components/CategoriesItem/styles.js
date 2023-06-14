@@ -1,33 +1,48 @@
-import { StyleSheet, Dimensions, Platform } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const { width } = Dimensions.get("window");
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 10,
-    alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
+    width: '50%',
+    height: '50%',
+    aspectRatio: 1,
+    margin: 8,
+    
+    
   },
   card: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 10,
-    elevation: 2,
-    padding: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 100,
+    shadowColor: "#000000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 4,
+    padding:3,
+
+    
 
   },
   image: {
-    width: Dimensions.get('window').width - 140, // Adjust the width according to your requirements
-    height: 250,
-    resizeMode: 'cover',
-    borderRadius: 10,
+    width: "100%",
+    height: "100%",
+    // marginBottom: 8,
+    borderRadius: 100,
+    justifyContent: "center",
+    alignItems: "center",
   },
   categoryName: {
-    marginTop: 10,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    paddingTop: 20,
+    fontSize: 10,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
+
+
 
 
 export default styles;

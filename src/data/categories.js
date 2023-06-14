@@ -7,7 +7,7 @@ export const CATEGORIES = [
   },
   {
     id: "2",
-    title: "Ropa y Accesorios",
+    title: "Ropa",
     img: require("../assets/category/RopaYAccesorios.jpg"),
     color: "salmon"
   },
@@ -19,25 +19,25 @@ export const CATEGORIES = [
   },
   {
     id: 4,
-    title: "Belleza y Cuidado Personal",
+    title: "Cuidado Personal",
     img: require("../assets/category/BellezaYCuidadoPersonal.jpg"),
     color: "skyblue"
   },
   {
     id: 5,
-    title: "Deportes y Aire Libre",
+    title: "Deportes",
     img: require("../assets/category/DeportesYAireLibre.jpg"),
     color: "skyblue"
   },
   {
     id: 6,
-    title: "Libros y Entretenimiento",
+    title: "Entretenimiento",
     img: require("../assets/category/LibrosYEntretenimiento.jpg"),
     color: "skyblue"
   },
   {
     id: 7,
-    title: "Juguetes y Juegos",
+    title: "Juguetes",
     img: require("../assets/category/JuguetesYJuegos.jpg"),
     color: "skyblue"
   },

@@ -35,9 +35,13 @@ const RegisterScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
+  
   const handleSignUp = () => {
     dispatch(signUp(name, firstName, country, email, password));
   };
+
+  
 
   return (
     <ImageBackground
@@ -69,15 +73,21 @@ const RegisterScreen = () => {
             />
             <TextInput
               label="Email"
+              keyboardType="default"
+              required
               style={styles.input}
               value={email}
+              errorText="Please enter a valid email address"
               onChangeText={(text) => setEmail(text)}
             />
             <TextInput
               label="Password"
+              keyboardType="default"
+              required
               secureTextEntry
               style={styles.input}
               value={password}
+              errorText="Please enter a valid password"
               onChangeText={(text) => setPassword(text)}
             />
           </Card.Content>

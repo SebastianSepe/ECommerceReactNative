@@ -11,7 +11,8 @@ export default () => {
   const userId = useSelector(state => state.auth.userId)
   return (
     <NavigationContainer>
-      {userId ? <BottomTabNavigator /> : <AuthNavigator />}
+      {/* {userId ? <BottomTabNavigator /> : <AuthNavigator />} */}
+      {userId ? <AuthNavigator /> : <BottomTabNavigator />}
     </NavigationContainer>
   );
 };

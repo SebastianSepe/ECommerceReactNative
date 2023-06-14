@@ -1,4 +1,4 @@
-import CategoriesScreen from "../screens/CategoriesScreen";
+import HomeScreen from "../screens/HomeScreen";
 import DetailsScreen from "../screens/DetailsScreen";
 import ProductsScreen from "../screens/ProductsScreen";
 import React from "react";
@@ -19,7 +19,7 @@ const ShopNavigator = () => {
     >
       <Stack.Screen
         name="Home"
-        component={CategoriesScreen}
+        component={HomeScreen}
         options={{
           title: "",
           headerTitleStyle: {
